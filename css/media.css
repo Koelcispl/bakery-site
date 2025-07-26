@@ -1,0 +1,477 @@
+@media screen and (max-width: 1201px) {
+    .second-sec {
+    background-position: 0px -55px;
+}
+
+    .pastry-section {
+        padding-top: 0px;
+    }
+
+    .wave-top {
+    top: -25px;
+    }
+
+    .wave-bottom {
+    bottom: -26px;
+    }
+
+    .chef-card {
+    width: 250px;
+    }
+
+    .chef-img img {
+    width: 85%;
+    height: 85%;
+    }
+
+    .chef-img {
+        margin-bottom: 0px;
+    }
+
+    .chef-card p {
+    font-size: 1.11rem;
+    }
+
+    .form-section .wave-top {
+    top: -25px;
+    }
+
+    .info-card {
+    max-width: 255px;
+    }
+
+    .info-icon {
+    margin-right: 0rem;
+    }
+
+    .info-card {
+    padding: 1rem 1.2rem;
+    }
+} 
+
+@media screen and (max-width: 1025px) {
+    .logo-img {
+        width: 70%;
+    }
+
+    .banner-cont h1 {
+        font-size: 50px;
+    }
+
+    .hero-img2 {
+    width: 20%;
+    }
+
+    .second-sec {
+    background-position: 0px -130px;
+    }
+
+    .wave-top {
+        top: -22px;
+    }
+
+    .wave-bottom {
+        bottom: -22px;
+    }
+
+    .chef-card {
+        width: 208px;
+    }
+
+    .chef-img {
+    width: 155px;
+    height: 155px;
+    }
+
+    .chef-card h3 {
+    font-size: 1.3rem;
+    }
+
+    .chef-section {
+    padding: 100px 0 70px 0;
+    }
+
+    .testi-txt-part .title {
+    font-size: 2.3rem;
+    }
+
+    .form-section .wave-top {
+        top: -21px;
+    }
+
+    .info-card {
+        max-width: 230px;
+    }
+
+    .info-text {
+    margin-left: 15px;
+    }
+
+    .info-card {
+        padding: 1rem 1.0rem;
+    }
+
+    .footer-logo {
+        width: 80%;
+    }
+
+    input, textarea {
+    padding: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner-cont {
+    margin-top: 0.8rem;
+    }
+
+    .shop-btn {
+        margin: 0 auto;
+        display: table;
+        float: none;
+    }
+
+    .wave-divider-top {
+        display: none;
+    }
+
+    .hero-section {
+    padding-bottom: 2rem;
+    }
+
+    .second-sec {
+        background: none;
+    }
+
+    .section-title {
+    margin-top: 1.6rem;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .pastry-section {
+        padding-bottom: 4rem;
+    }
+
+    .wave-top {
+        display: none;
+    }
+
+    .wave-bottom {
+        display: none;
+    }
+
+    .swiper-slide .shop-btn {
+        margin: inherit;
+    }
+
+    .sweets-section {
+        padding-bottom: 0rem;
+    }
+
+    .swiper-slide .card {
+        margin-bottom: 30px;
+    }
+
+    .chef-section {
+        padding-top: 50px;
+    }
+
+    .chef-card {
+        width: 290px;
+    }
+
+    .chef-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .chef-img img {
+        width: 85%;
+        height: 85%;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .testimonial-section {
+        padding-bottom: 2rem;
+    }
+
+    .contact-form-container {
+        margin-top: 2rem;
+    }
+
+    footer .footer-grid {
+        padding-top: 0px;
+    }
+
+    footer .footer-grid {
+    gap: 4rem;
+    }
+
+    .banner-cont h1 {
+        font-size: 36px;
+    }
+
+    .banner-cont p {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+        .banner-cont {
+        margin-top: 0.8rem;
+        width: 140%;
+        margin-left: -35px;
+        margin-right: 0px;
+    }
+
+    .banner-cont h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+        .banner-cont p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .shop-btn {
+        padding: 0.5rem 2.8rem;
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+    .section-title {
+    font-size: 2.2rem;
+    }
+
+    .hero-img {
+    margin-left: -20%;
+    }
+
+        .hero-section {
+        padding-bottom: 3rem;
+    }
+
+    .section-desc {
+    font-size: 1.1rem;
+    }
+
+    .pastry-section .title {
+        font-size: 2.5rem;
+    }
+
+    .image-container {
+    flex: none;
+    }
+
+    .pastry-section {
+        padding-bottom: 2rem;
+    }
+
+    .sweets-header h2 {
+    font-size: 2.4rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .chef-title {
+    font-size: 2.4rem;
+    }
+
+    .chef-card {
+        width: 240px;
+    }
+
+    .gallery-section h2 {
+        font-size: 2.4em;
+    }
+
+    .testimonial-section {
+        padding-top: 0rem;
+    }
+
+    .testi-txt-part p {
+        text-align: center;
+    }
+
+    .testi-content {
+    display: block;
+    align-items: center;
+}
+
+    .testi-txt-part {
+        margin-left: 0px;
+}
+
+    .testi-txt-part .title {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .form-row input {
+    flex: 1 1 47px;
+    }
+
+    .info-card {
+        max-width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .hero-img {
+        margin-left: 0%;
+        width: 80%;
+    }
+
+    .banner-cont {
+        width: 100%;
+        margin-left: -70px;
+    }
+
+    .banner-cont h1 {
+        font-size: 28px;
+    }
+
+    .banner-cont p {
+        width: 125%;
+    }
+
+    .section-title {
+        font-size: 2.0rem;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .pastry-section .title {
+        font-size: 2.2rem;
+    }
+
+    .pastry-section .title {
+        font-size: 2.2rem;
+        margin-bottom: 0px;
+    }
+
+    .swiper-slide {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .logo-img {
+        width: 60%;
+    }
+
+    .navbar {
+    border-radius: 20px;
+    }
+
+    .banner-cont h1 {
+        font-size: 21px;
+    }
+
+    .banner-cont p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-desc {
+        font-size: 1.0rem;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .card-content {
+    height: 285px;
+    }
+
+    .card-content {
+    position: relative;
+    z-index: 1;
+    margin: 10px 10px 10px;
+    padding: 70px 20px 30px 20px;
+    border: 2px dashed #fff;
+    border-radius: 20px;
+    height: 285px;
+}
+
+    .sweets-header h2 {
+        font-size: 2.0rem;
+    }
+
+    .swiper-slide .shop-btn {
+        margin: inherit;
+        float: left;
+    }
+
+    .swiper-slide {
+        margin-bottom: 30px;
+    }
+
+        .chef-title {
+        font-size: 2.2rem;
+    }
+
+        .chef-title {
+        font-size: 2.2rem;
+    }
+
+        .chef-card {
+        width: 300px;
+    }
+
+        .testi-txt-part .title {
+        font-size: 2.0rem;
+        }
+
+            .testi-txt-part p {
+        text-align: center;
+        font-size: 1.0rem;
+        padding-bottom: 40px;
+    }
+
+    .testimonialSwiper .swiper-slide {
+        padding: 3rem 1rem 0rem 1rem;
+    }
+
+        .testimonial-section {
+        padding-bottom: 3.5rem;
+    }
+
+    .info-section {
+    padding: 3rem 0 0 1rem;
+    justify-content: flex-start;
+}
+
+    .info-card {
+        max-width: 410px;
+    }
+
+        .footer-logo {
+        width: 50%;
+    }
+
+        footer .footer-grid {
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweeny Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <header class="container">
+        <div class="logo text-2xl font-bold">
+          <img src="images/logo.png" alt="Sweeny Logo" style="vertical-align: middle;" />
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button>Order Now</button>
+      </header>
+  
+      <section class="hero">
+        <h1>Checkout</h1>
+        <p>Home / Checkout</p>
+      </section>
+
+<div class="container checkout-cont">
+<form id="checkout-form">
+  <!-- Billing -->
+  <div class="step">
+    <div class="step-number">1</div>
+    <h2>Billing Information</h2>
+  </div>
+
+  <div class="form-group">
+    <label>First Name*</label>
+    <input type="text" name="firstName" required />
+  </div>
+  <div class="form-group">
+    <label>Last Name*</label>
+    <input type="text" name="lastName" required />
+  </div>
+  <div class="form-group">
+    <label>Email Address*</label>
+    <input type="email" name="email" required />
+  </div>
+  <div class="form-group">
+    <label>Address*</label>
+    <input type="text" name="address" required />
+  </div>
+  <div class="form-group half">
+    <label>City*</label>
+    <input type="text" name="city" required />
+  </div>
+  <div class="form-group half">
+    <label>Country*</label>
+    <select name="country" required>
+      <option>Select Country</option>
+      <option>USA</option>
+    </select>
+  </div>
+  <div class="form-group half">
+    <label>Postal Code*</label>
+    <input type="text" name="postal" required />
+  </div>
+  <div class="form-group half">
+    <label>State/Province*</label>
+    <select name="state" required>
+      <option>Select State</option>
+      <option>CA</option>
+      <option>NY</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Telephone*</label>
+    <input type="text" name="phone" required />
+  </div>
+
+  <!-- Payment -->
+  <div class="step mt-5">
+    <div class="step-number">2</div>
+    <h2>Payment Information</h2>
+  </div>
+
+  <div class="form-group half">
+    <label>Card Type*</label>
+    <select name="cardType" required>
+      <option>Select Payment Method</option>
+      <option>Visa</option>
+      <option>MasterCard</option>
+    </select>
+  </div>
+
+  <div class="form-group half">
+    <label>Cards Accepted*</label>
+    <div class="accepted">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" />
+    </div>
+  </div>
+
+  <div class="form-group half">
+    <label>Card No*</label>
+    <input type="text" name="cardNo" required />
+  </div>
+
+  <div class="form-group half">
+    <label>Expiry Month*</label>
+    <select name="expMonth" required>
+      <option>Month</option>
+      <option>01</option>
+      <option>02</option>
+      <option>03</option>
+      <option>04</option>
+      <option>05</option>
+      <option>06</option>
+      <option>07</option>
+      <option>08</option>
+      <option>09</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+    </select>
+  </div>
+
+  <div class="form-group half">
+    <label>Expiry Year*</label>
+    <select name="expYear" required>
+      <option>Year</option>
+      <option>2025</option>
+      <option>2026</option>
+      <option>2027</option>
+      <option>2028</option>
+      <option>2029</option>
+      <option>2030</option>
+      <option>2031</option>
+      <option>2032</option>
+      <option>2033</option>
+      <option>2034</option>
+      <option>2035</option>
+    </select>
+  </div>
+
+  <div class="form-group half">
+    <label>CVV*</label>
+    <input type="text" name="cvv" required />
+  </div>
+
+  <label class="checkbox">
+    <input type="checkbox" class="chkbx" name="agree" required /> I am at least 18 years of age and agree to the Terms & Conditions.
+  </label>
+  <p class="terms">By clicking the Order Now button and submitting this order, I agree that my card will be charged <strong>$<span id="orderAmount">0.00</span></strong>. If this product is not right for you, or have any questions, contact customer service with any questions by calling (00) 909-0909090 or e-mailing user@gmail.com. Charges will appear on your credit card statements as sweeny.com. Standard shipping orders will be processed and shipped with USPS within about 1 business day. Thank you for your business.</p>
+  <button class="checkout-btn" type="submit">Complete Checkout</button>
+</form>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <div id="order-items"></div>
+
+      <div class="totals">
+        <div><span>Cart Subtotal:</span><span id="cart-subtotal">$0.00</span></div>
+        <div><span>Shipping:</span><span>$0.00</span></div>
+        <div><strong>Order Total:</strong><strong id="order-total">$0.00</strong></div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="images/light-logo.png" alt="Sweeny Logo" style="vertical-align: middle;" />
+        <p class="mt-3">
+          Donec sit amet nibh vestibulum ipsum cursus rhoncus. Duis tortor gravida ligula eleifend finibus.
+        </p>
+        <div class="social-icons">
+            <div class="icon-circle"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon-circle"><i class="fab fa-instagram"></i></div>
+            <div class="icon-circle"><i class="fab fa-twitter"></i></div>
+            <div class="icon-circle"><i class="fab fa-google-plus-g"></i></div>
+        </div>
+      </div>
+      <div>
+        <h4>GET IN TOUCH</h4>
+        <ul class="contact-det">
+          <li><i class="fas fa-map-marker-alt"></i> No: 58 A, Madison Street Baltimore, MD, USA 4508</li>
+          <li><i class="fas fa-phone-alt"></i> 9080909090</li>
+          <li><i class="fas fa-envelope"></i> user@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>USEFUL LINKS</h4>
+        <ul class="contact-det">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ACCOUNT & INFO</h4>
+        <ul class="contact-det">
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="copyright">&copy; 2024. All Rights Reserved.</span>
+      </div>
+      <div class="footer-right">
+        <img src="images/cards.png" alt="Mastercard" class="payment-icon">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Html/js/script.js"></script>
+    <script>
+  // 1️⃣ Get cart and summary elements
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const orderItemsContainer = document.getElementById('order-items');
+  const orderSubtotal = document.getElementById('cart-subtotal');
+  const orderTotal = document.getElementById('order-total');
+  const orderAmount = document.getElementById('orderAmount');
+
+  let subtotal = 0;
+
+  // 2️⃣ Render cart items or show empty
+  if (cart.length === 0) {
+    orderItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+  } else {
+    cart.forEach(item => {
+      const itemTotal = item.price * item.qty;
+      subtotal += itemTotal;
+
+      const itemDiv = document.createElement('div');
+      itemDiv.classList.add('order-item');
+      itemDiv.innerHTML = `
+        <div style="display:flex; align-items:center; margin-bottom:10px;">
+          <img src="${item.image}" alt="${item.name}" style="width:60px; height:60px; object-fit:cover; margin-right:10px;">
+          <div>
+            <strong>${item.name}</strong><br>
+            Qty: ${item.qty} × $${item.price.toFixed(2)}<br>
+            <small>Total: $${itemTotal.toFixed(2)}</small>
+          </div>
+        </div>
+      `;
+      orderItemsContainer.appendChild(itemDiv);
+    });
+  }
+
+  orderSubtotal.textContent = `$${subtotal.toFixed(2)}`;
+  orderTotal.textContent = `$${subtotal.toFixed(2)}`;
+  orderAmount.textContent = subtotal.toFixed(2);
+
+  const checkoutForm = document.querySelector('#checkout-form');
+
+  checkoutForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    if (cart.length === 0) {
+      alert('Your cart is empty. Please add items before checkout.');
+      return;
+    }
+
+    const form = new FormData(checkoutForm);
+    let errors = [];
+
+    if (!form.get('firstName').trim()) errors.push('First Name is required.');
+    if (!form.get('lastName').trim()) errors.push('Last Name is required.');
+    if (!/^\S+@\S+\.\S+$/.test(form.get('email'))) errors.push('Valid Email is required.');
+    if (!form.get('address').trim()) errors.push('Address is required.');
+    if (!form.get('city').trim()) errors.push('City is required.');
+    if (form.get('country') === 'Select Country') errors.push('Country is required.');
+    if (!form.get('postal').trim()) errors.push('Postal Code is required.');
+    if (form.get('state') === 'Select State') errors.push('State/Province is required.');
+    if (!form.get('phone').trim()) errors.push('Telephone is required.');
+    if (form.get('cardType') === 'Select Payment Method') errors.push('Card Type is required.');
+    if (!/^\d{13,19}$/.test(form.get('cardNo'))) errors.push('Card Number must be 13–19 digits.');
+    if (form.get('expMonth') === 'Month') errors.push('Expiry Month is required.');
+    if (form.get('expYear') === 'Year') errors.push('Expiry Year is required.');
+    if (!/^\d{3,4}$/.test(form.get('cvv'))) errors.push('CVV must be 3–4 digits.');
+    if (!checkoutForm.querySelector('[name="agree"]').checked) errors.push('You must agree to the Terms.');
+
+    if (errors.length > 0) {
+      alert('Please fix the following:\n\n' + errors.join('\n'));
+      return;
+    }
+
+    // alert('Thank you! Your order has been placed.');
+    localStorage.removeItem('cart');
+    window.location.href = 'thankyou.html';
+  });
+</script>
+
+  </script>
+</body>
+</html>
