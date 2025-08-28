@@ -28,14 +28,14 @@ function viewCart() {
 }
 
 // Handle Shop Now buttons on index.html
-document.addEventListener('DOMContentLoaded', () => {
-  const shopButtons = document.querySelectorAll('.shop-btn');
-  shopButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.location.href = 'shop.html';
-    });
-  });
+// document.addEventListener('DOMContentLoaded', () => {
+//   const shopButtons = document.querySelectorAll('.shop-btn');
+//   shopButtons.forEach(btn => {
+//     btn.addEventListener('click', (e) => {
+//       e.preventDefault();
+//       window.location.href = 'shop.html';
+//     });
+//   });
 
   // If there is a Cart link, hook it up too
   const cartLinks = document.querySelectorAll('.cart-link');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       viewCart();
     });
   });
-});
+
 
   
   
