@@ -16,7 +16,7 @@
     {
       id: 1,
       name: "Raspberry Cake",
-      price: "$10",
+      price: "$10.00",
       image: "images/card-img1.jpg",
       description: "Delight in our luscious raspberry cake, layered with moist sponge and rich raspberry filling. Topped with creamy frosting and fresh raspberries, it’s a perfect blend of sweet and tart."
     },
@@ -100,10 +100,7 @@
       <div class="price" id="productPrice"></div>
 
       <h3>Product Description :</h3>
-      <p id="productDescription">
-        Delight in our luscious raspberry cake, layered with moist sponge and rich raspberry filling.
-        Topped with creamy frosting and fresh raspberries, it’s a perfect blend of sweet and tart.
-      </p>
+      <p id="productDescription"></p>
 
 <div class="option-group">
   <h3>Buy Option :</h3>
@@ -184,37 +181,67 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../Html/js/script.js"></script>
 <script>
-const params = new URLSearchParams(window.location.search);
-    const name = params.get('name');
+  // --- GET PRODUCT FROM URL ---
+  const params = new URLSearchParams(location.search);
+  const productName = params.get("name");
 
-    const product = products.find(p => p.name === name);
-    if (product) {
-      document.getElementById('productName').textContent = product.name;
-      document.getElementById('productPrice').textContent = product.price;
-      document.getElementById('productImage').src = product.image;
-      document.getElementById('productDescription').textContent = product.description;
+  // --- FIND PRODUCT ---
+  const product = products.find(p => p.name === productName);
+
+  // --- DOM ELEMENTS ---
+  const nameEl = document.getElementById("productName");
+  const priceEl = document.getElementById("productPrice");
+  const imgEl = document.getElementById("productImage");
+  const descEl = document.getElementById("productDescription");
+
+  // --- SHOW PRODUCT DATA ---
+  if (product) {
+    nameEl.textContent = product.name;
+    priceEl.textContent = product.price;
+    imgEl.src = product.image;
+    descEl.textContent = product.description || "No description available.";
+  } else {
+    nameEl.textContent = "Product not found.";
+  }
+
+  // --- ADD TO CART ---
+  function addToCart() {
+    const qty = Number(document.getElementById("quantity").value);
+
+    // Prevent wrong qty
+    if (!qty || qty <= 0) {
+      alert("Please choose a valid quantity");
+      return;
+    }
+
+    // Load existing cart
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+
+    // Check if already in cart
+    const item = cart.find(i => i.name === product.name);
+
+    if (item) {
+      item.qty += qty; // increase quantity
     } else {
-      document.getElementById('productName').textContent = "Product not found.";
+      cart.push({
+        name: product.name,
+        price: Number(product.price.replace("$", "")),
+        image: product.image,
+        qty
+      });
     }
 
-    function addToCart() {
-      const qty = parseInt(document.getElementById('quantity').value);
-      const cart = JSON.parse(localStorage.getItem('cart')) || [];
-      const existingIndex = cart.findIndex(p => p.name === product.name);
-      if (existingIndex > -1) {
-        cart[existingIndex].qty += qty;
-      } else {
-        cart.push({
-          name: product.name,
-          price: parseFloat(product.price.replace('$','')),
-          image: product.image,
-          qty: qty
-        });
-      }
-      localStorage.setItem('cart', JSON.stringify(cart));
-      window.location.href = 'cart.html';
-    }
+    // Save cart
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // SHOW ALERT HERE
+  alert(`${product.name} added to cart!`);
+
+    // Redirect
+    location.href = "cart.html";
+  }
 </script>
+
 
   
 </body>
