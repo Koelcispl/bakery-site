@@ -1,42 +1,4 @@
-// // Get or init cart from localStorage
-// let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-// // Save cart to localStorage
-// function saveCart() {
-//   localStorage.setItem('cart', JSON.stringify(cart));
-// }
-
-// // Add product to cart
-// function addToCart(product) {
-//   cart.push(product);
-//   saveCart();
-//   alert(`${product.name} added to cart.`);
-// }
-
-// View cart in popup
-// function viewCart() {
-//   if (cart.length === 0) {
-//     alert('Cart is empty.');
-//     return;
-//   }
-//   let cartWindow = window.open('', 'Cart');
-//   cartWindow.document.write('<h1>Your Cart</h1><ul>');
-//   cart.forEach(item => {
-//     cartWindow.document.write(`<li>${item.name} - ${item.price}</li>`);
-//   });
-//   cartWindow.document.write('</ul>');
-// }
-
-  // If there is a Cart link, hook it up too
-  // const cartLinks = document.querySelectorAll('.cart-link');
-  // cartLinks.forEach(link => {
-  //   link.addEventListener('click', (e) => {
-  //     e.preventDefault();
-  //     viewCart();
-  //   });
-  // });
-
-  // Checkout Form
+  // Contact Form
   document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
